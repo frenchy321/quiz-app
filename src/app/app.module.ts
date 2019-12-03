@@ -1,11 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RegisterComponent } from './register/register.component';
-import { QuizComponent } from './quiz/quiz.component';
-import { ResultComponent } from './result/result.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
+import { AppComponent } from "./app.component";
+import { NavbarComponent } from "./navbar/navbar.component";
+import { RegisterComponent } from "./register/register.component";
+import { QuizComponent } from "./quiz/quiz.component";
+import { ResultComponent } from "./result/result.component";
+import { appRoutes } from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -15,10 +16,8 @@ import { ResultComponent } from './result/result.component';
     QuizComponent,
     ResultComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
