@@ -1,4 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
@@ -16,7 +17,7 @@ import { appRoutes } from "./app-routing.module";
     QuizComponent,
     ResultComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes), FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
