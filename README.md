@@ -1,4 +1,4 @@
-# Quizapp
+# quiz-app
 
 This is a fun quiz-app that is based on the famous UK sitcom only fools and horses.
 
