@@ -1,5 +1,18 @@
+body {
+  background: url(./assets/images/del-&-rod.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card {
+  border: 2px solid #fff;
+}
+
 input.ng-invalid.ng-touched {
-  border-color: rgba(255, 10, 29, 1) !important;
+  border-color: 2px solid red;
   box-shadow: none !important;
 }
 
