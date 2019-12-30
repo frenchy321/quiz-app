@@ -21,6 +21,7 @@ import { AddClientComponent } from "./components/add-client/add-client.component
     ComponentsComponent,
     AddClientComponent
   ],
+
   imports: [BrowserModule, RouterModule.forRoot(appRoutes), FormsModule],
   providers: [],
   bootstrap: [AppComponent]
