@@ -13,7 +13,9 @@ export class RegisterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    (this.id = ""), (this.name = ""), (this.email = "");
+    this.id = "";
+    this.name = "";
+    this.email = "";
   }
 
   onSubmit() {}

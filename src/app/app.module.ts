@@ -10,6 +10,7 @@ import { ResultComponent } from "./components/result/result.component";
 import { appRoutes } from "./app-routing.module";
 import { ComponentsComponent } from "./components/components.component";
 import { AddClientComponent } from "./components/add-client/add-client.component";
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddClientComponent } from "./components/add-client/add-client.component
     QuizComponent,
     ResultComponent,
     ComponentsComponent,
-    AddClientComponent
+    AddClientComponent,
+    NotFoundComponent
   ],
 
   imports: [BrowserModule, RouterModule.forRoot(appRoutes), FormsModule],
