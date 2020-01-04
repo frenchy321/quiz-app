@@ -15,6 +15,7 @@ import { appRoutes } from "./app-routing.module";
 import { ComponentsComponent } from "./components/components.component";
 import { AddUserComponent } from "./components/add-user/add-user.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
+import { ScoresComponent } from './components/scores/scores.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
     ResultComponent,
     ComponentsComponent,
     AddUserComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ScoresComponent
   ],
 
   imports: [
