@@ -9,7 +9,9 @@ import { from } from "rxjs";
   styleUrls: ["./scores.component.css"]
 })
 export class ScoresComponent implements OnInit {
-  constructor() {}
+  users: Users[];
+
+  constructor(private usersService: UserService) {}
 
   ngOnInit() {}
 }
