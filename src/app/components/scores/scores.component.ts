@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { UserService } from "../../services/user.service";
 import { Users } from "../../models/Users";
-import { from } from "rxjs";
 
 @Component({
   selector: "app-scores",
@@ -13,5 +12,7 @@ export class ScoresComponent implements OnInit {
 
   constructor(private usersService: UserService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.usersService.getUsers().subscribe(users => console.log(users));
+  }
 }
