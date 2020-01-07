@@ -6,16 +6,15 @@ import {
 } from "angularfire2/firestore";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
-import { Users } from "../models/users";
-import { User } from "firebase";
+import { User } from "../models/User";
 
 @Injectable({
   providedIn: "root"
 })
 export class UserService {
-  usersCollection: AngularFirestoreCollection<Users>;
-  usersDoc: AngularFirestoreDocument<Users>;
-  users: Observable<Users[]>;
+  usersCollection: AngularFirestoreCollection<User>;
+  usersDoc: AngularFirestoreDocument<User>;
+  users: Observable<User[]>;
   user: Observable<User>;
 
   constructor(private afs: AngularFirestore) {
@@ -24,17 +23,21 @@ export class UserService {
     );
   }
 
-  getUsers(): Observable<Users[]> {
+  getUsers(): Observable<User[]> {
     this.users = this.usersCollection.snapshotChanges().pipe(
       map(changes => {
         return changes.map(action => {
           const data = action.payload.doc.data() as User;
-          data.providerId = action.payload.doc.id;
+          data.id = action.payload.doc.id;
           return data;
         });
       })
     );
 
     return this.users;
+  }
+
+  newUser(user: User) {
+    this.usersCollection.add(user);
   }
 }

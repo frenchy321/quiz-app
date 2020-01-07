@@ -1,4 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { User } from "../../models/User";
+import { UserService } from "../../services/user.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-register",
@@ -6,17 +9,18 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./register.component.css"]
 })
 export class RegisterComponent implements OnInit {
-  id: string;
-  name: string;
-  email: string;
+  user: User = {
+    name: "",
+    email: "",
+    score: 0
+  };
 
-  constructor() {}
+  constructor(private userService: UserService, private router: Router) {}
 
-  ngOnInit() {
-    this.id = "";
-    this.name = "";
-    this.email = "";
+  ngOnInit() {}
+
+  onSubmit() {
+    this.userService.newUser(this.user);
+    this.router.navigate(["/quiz"]);
   }
-
-  onSubmit() {}
 }
