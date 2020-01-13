@@ -6,6 +6,7 @@ import { ScoresComponent } from "./components/scores/scores.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 
 export const appRoutes: Routes = [
+  { path: "", redirectTo: "/register", pathMatch: "full" },
   { path: "register", component: RegisterComponent },
   { path: "quiz", component: QuizComponent },
   { path: "result", component: ResultComponent },
