@@ -1,460 +1,472 @@
-export const questions = [
+import { Question } from "./quiz.component";
+
+export const questions: Question[] = [
   {
-    text: "What was Jim Broadbent's character called?",
+    questionText: "What was Jim Broadbent's character called?",
     answers: [
-      { text: "Dave", isCorrect: false },
-      { text: "Mickey", isCorrect: false },
-      { text: "Slater", isCorrect: true }
+      { answerText: "Dave", isCorrect: false },
+      { answerText: "Mickey", isCorrect: false },
+      { answerText: "Slater", isCorrect: true }
     ]
   },
   {
-    text: "What was the name Del Boy gave Rodney's band?",
+    questionText: "What was the name Del Boy gave Rodney's band?",
     answers: [
-      { text: "A Bunch Of Wallies", isCorrect: true },
-      { text: "A Bunch of Plonkers", isCorrect: false },
-      { text: "The Four Wallies", isCorrect: false }
+      { answerText: "A Bunch Of Wallies", isCorrect: true },
+      { answerText: "A Bunch of Plonkers", isCorrect: false },
+      { answerText: "The Four Wallies", isCorrect: false }
     ]
   },
   {
-    text: "Who kept Del Boy stocked up on fancy cocktails. What's his name?",
+    questionText:
+      "Who kept Del Boy stocked up on fancy cocktails. What's his name?",
     answers: [
-      { text: "Roy", isCorrect: false },
-      { text: "Micheal", isCorrect: true },
-      { text: "Densil", isCorrect: false }
+      { answerText: "Roy", isCorrect: false },
+      { answerText: "Micheal", isCorrect: true },
+      { answerText: "Densil", isCorrect: false }
     ]
   },
   {
-    text: "What was the name of Del & Rodney's dad?",
+    questionText: "What was the name of Del & Rodney's dad?",
     answers: [
-      { text: "Freddy", isCorrect: false },
-      { text: "Albert", isCorrect: false },
-      { text: "Reg", isCorrect: true }
+      { answerText: "Freddy", isCorrect: false },
+      { answerText: "Albert", isCorrect: false },
+      { answerText: "Reg", isCorrect: true }
     ]
   },
   {
-    text: "What was the name of the late actor who played Grandad?",
+    questionText: "What was the name of the late actor who played Grandad?",
     answers: [
-      { text: "Pearce Houghton", isCorrect: false },
-      { text: "Leonard Pearce", isCorrect: true },
-      { text: "Louis Harper", isCorrect: false }
+      { answerText: "Pearce Houghton", isCorrect: false },
+      { answerText: "Leonard Pearce", isCorrect: true },
+      { answerText: "Louis Harper", isCorrect: false }
     ]
   },
   {
-    text: "What is the name of the local pub?",
+    questionText: "What is the name of the local pub?",
     answers: [
-      { text: "The Nag's Hang-out", isCorrect: false },
-      { text: "The Nag's Head", isCorrect: true },
-      { text: "The Head's Tap", isCorrect: false }
+      { answerText: "The Nag's Hang-out", isCorrect: false },
+      { answerText: "The Nag's Head", isCorrect: true },
+      { answerText: "The Head's Tap", isCorrect: false }
     ]
   },
   {
-    text: "What part of London do they live in?",
+    questionText: "What part of London do they live in?",
     answers: [
-      { text: "Clapham", isCorrect: false },
-      { text: "Hackney", isCorrect: false },
-      { text: "Peckham", isCorrect: true }
+      { answerText: "Clapham", isCorrect: false },
+      { answerText: "Hackney", isCorrect: false },
+      { answerText: "Peckham", isCorrect: true }
     ]
   },
   {
-    text:
+    questionText:
       "What did Rodney think people were calling him when he was on the run?",
     answers: [
-      { text: "The Peckham Lunatic", isCorrect: false },
-      { text: "The Peckham Pouncer", isCorrect: true },
-      { text: "The Peckhem Prowler", isCorrect: false }
+      { answerText: "The Peckham Lunatic", isCorrect: false },
+      { answerText: "The Peckham Pouncer", isCorrect: true },
+      { answerText: "The Peckhem Prowler", isCorrect: false }
     ]
   },
   {
-    text: "How did Trigger get his nickname?",
+    questionText: "How did Trigger get his nickname?",
     answers: [
-      { text: "Sweeping the streets", isCorrect: false },
-      { text: "He looks like horse", isCorrect: true },
-      { text: "He owned a gun", isCorrect: false }
+      { answerText: "Sweeping the streets", isCorrect: false },
+      { answerText: "He looks like horse", isCorrect: true },
+      { answerText: "He owned a gun", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "Who did Del say stole the microwaves in the episode titled 'May the Force be With You'?",
     answers: [
-      { text: "Him self", isCorrect: true },
-      { text: "Rodney", isCorrect: false },
-      { text: "Trigger", isCorrect: false }
+      { answerText: "Him self", isCorrect: true },
+      { answerText: "Rodney", isCorrect: false },
+      { answerText: "Trigger", isCorrect: false }
     ]
   },
   {
-    text: "What is Rodney's middle name?",
+    questionText: "What is Rodney's middle name?",
     answers: [
-      { text: "Fredrick", isCorrect: false },
-      { text: "Charlton", isCorrect: true },
-      { text: "Charles", isCorrect: false }
+      { answerText: "Fredrick", isCorrect: false },
+      { answerText: "Charlton", isCorrect: true },
+      { answerText: "Charles", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "What was the name of the species of butterfly killed by Denzil here?",
     answers: [
-      { text: "Broard blue", isCorrect: false },
-      { text: "Jamacan swollow tit", isCorrect: true },
-      { text: "Braided small tit", isCorrect: false }
+      { answerText: "Broard blue", isCorrect: false },
+      { answerText: "Jamacan swollow tit", isCorrect: true },
+      { answerText: "Braided small tit", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "Which character was the first to speak in episode one, titled 'Big Brother'?",
     answers: [
-      { text: "Trigger", isCorrect: false },
-      { text: "Grandad", isCorrect: true },
-      { text: "Delboy", isCorrect: false }
+      { answerText: "Trigger", isCorrect: false },
+      { answerText: "Grandad", isCorrect: true },
+      { answerText: "Delboy", isCorrect: false }
     ]
   },
   {
-    text: "What was the real name of the man known as 'The Shadow'?",
+    questionText: "What was the real name of the man known as 'The Shadow'?",
     answers: [
-      { text: "Lennox", isCorrect: true },
-      { text: "Gary", isCorrect: false },
-      { text: "Barry", isCorrect: false }
+      { answerText: "Lennox", isCorrect: true },
+      { answerText: "Gary", isCorrect: false },
+      { answerText: "Barry", isCorrect: false }
     ]
   },
   {
-    text: "Which of these three actors is the youngest?",
+    questionText: "Which of these three actors is the youngest?",
     answers: [
-      { text: "Patrick Murray (Mickey Pearce)", isCorrect: false },
-      { text: "Nicholas Lyndhurst (Rodney)", isCorrect: true },
-      { text: "Paul Barber (Denzil)", isCorrect: false }
+      { answerText: "Patrick Murray (Mickey Pearce)", isCorrect: false },
+      { answerText: "Nicholas Lyndhurst (Rodney)", isCorrect: true },
+      { answerText: "Paul Barber (Denzil)", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "What did Del say Mickie Pearce accidentally bid £40 on when he scratched his bum at an auction?",
     answers: [
-      { text: "A Clock", isCorrect: false },
-      { text: "A Painting", isCorrect: false },
-      { text: "An electric generator", isCorrect: true }
+      { answerText: "A Clock", isCorrect: false },
+      { answerText: "A Painting", isCorrect: false },
+      { answerText: "An electric generator", isCorrect: true }
     ]
   },
   {
-    text: "What is the name of Trigger's niece?",
+    questionText: "What is the name of Trigger's niece?",
     answers: [
-      { text: "Lisa", isCorrect: true },
-      { text: "Lora", isCorrect: false },
-      { text: "Sam", isCorrect: false }
+      { answerText: "Lisa", isCorrect: true },
+      { answerText: "Lora", isCorrect: false },
+      { answerText: "Sam", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "In the episode 'Hole in One', which of these was NOT a pub the judge asked Uncle Albert about?",
     answers: [
-      { text: "Brunswick Club", isCorrect: false },
-      { text: "One-Eleven Club", isCorrect: true },
-      { text: "Victory Inn", isCorrect: false }
+      { answerText: "Brunswick Club", isCorrect: false },
+      { answerText: "One-Eleven Club", isCorrect: true },
+      { answerText: "Victory Inn", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "What was the name of this familiar-looking mobster in the 'Miami Twice' Christmas special?",
     answers: [
-      { text: "Don obeatie", isCorrect: false },
-      { text: "Don ochetti", isCorrect: true },
-      { text: "Don carlos-gotea", isCorrect: false }
+      { answerText: "Don obeatie", isCorrect: false },
+      { answerText: "Don ochetti", isCorrect: true },
+      { answerText: "Don carlos-gotea", isCorrect: false }
     ]
   },
   {
-    text: "What was Grandad trying to watch on a stolen microwave?",
+    questionText: "What was Grandad trying to watch on a stolen microwave?",
     answers: [
-      { text: "The news", isCorrect: false },
-      { text: "Dukes of hazzard", isCorrect: true },
-      { text: "Emmerdale", isCorrect: false }
+      { answerText: "The news", isCorrect: false },
+      { answerText: "Dukes of hazzard", isCorrect: true },
+      { answerText: "Emmerdale", isCorrect: false }
     ]
   },
   {
-    text: "What piece of music does 'Dave' have a karaoke version of?",
+    questionText: "What piece of music does 'Dave' have a karaoke version of?",
     answers: [
-      { text: "Mozart's Symphony Number 38 in D Major", isCorrect: true },
-      { text: "Mozart's Symphony Number 37 in D Minor", isCorrect: false },
-      { text: "Mozart's Symphony Number 37 in E Minor", isCorrect: false }
+      { answerText: "Mozart's Symphony Number 38 in D Major", isCorrect: true },
+      {
+        answerText: "Mozart's Symphony Number 37 in D Minor",
+        isCorrect: false
+      },
+      { answerText: "Mozart's Symphony Number 37 in E Minor", isCorrect: false }
     ]
   },
   {
-    text: "'Never mind, eh? Viva la France as they say in _____'",
+    questionText: "'Never mind, eh? Viva la France as they say in _____'",
     answers: [
-      { text: "Paris", isCorrect: false },
-      { text: "France", isCorrect: false },
-      { text: "Rome", isCorrect: true }
+      { answerText: "Paris", isCorrect: false },
+      { answerText: "France", isCorrect: false },
+      { answerText: "Rome", isCorrect: true }
     ]
   },
   {
-    text: "In what year did Joan Trotter pass away?",
+    questionText: "In what year did Joan Trotter pass away?",
     answers: [
-      { text: "1972", isCorrect: false },
-      { text: "1964", isCorrect: true },
-      { text: "1966", isCorrect: false }
+      { answerText: "1972", isCorrect: false },
+      { answerText: "1964", isCorrect: true },
+      { answerText: "1966", isCorrect: false }
     ]
   },
   {
-    text: "What were the names of the two Driscoll brothers?",
+    questionText: "What were the names of the two Driscoll brothers?",
     answers: [
-      { text: "John and Barry", isCorrect: false },
-      { text: "Tony and Danny", isCorrect: true },
-      { text: "john and Danny", isCorrect: false }
+      { answerText: "John and Barry", isCorrect: false },
+      { answerText: "Tony and Danny", isCorrect: true },
+      { answerText: "john and Danny", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "What name did the axe-murderer use to fool the Trotters into letting him in?",
     answers: [
-      { text: "Chief Frankham", isCorrect: false },
-      { text: "Chief Robinson", isCorrect: true },
-      { text: "Chief Parkinson", isCorrect: false }
+      { answerText: "Chief Frankham", isCorrect: false },
+      { answerText: "Chief Robinson", isCorrect: true },
+      { answerText: "Chief Parkinson", isCorrect: false }
     ]
   },
   {
-    text: "Who wrote and created the show?",
+    questionText: "Who wrote and created the show?",
     answers: [
-      { text: "Tony Dowd", isCorrect: false },
-      { text: "Tony O'sullivan", isCorrect: false },
-      { text: "John Sullivan", isCorrect: true }
+      { answerText: "Tony Dowd", isCorrect: false },
+      { answerText: "Tony O'sullivan", isCorrect: false },
+      { answerText: "John Sullivan", isCorrect: true }
     ]
   },
   {
-    text: "When did the show start?",
+    questionText: "When did the show start?",
     answers: [
-      { text: "1981", isCorrect: true },
-      { text: "1982", isCorrect: false },
-      { text: "1984", isCorrect: false }
+      { answerText: "1981", isCorrect: true },
+      { answerText: "1982", isCorrect: false },
+      { answerText: "1984", isCorrect: false }
     ]
   },
   {
-    text: "What is the name of the tower block where the Trotters live?",
+    questionText:
+      "What is the name of the tower block where the Trotters live?",
     answers: [
-      { text: "Nelson Mandela House", isCorrect: true },
-      { text: "Millionaire's Rise", isCorrect: false },
-      { text: "The Tower Block", isCorrect: false }
+      { answerText: "Nelson Mandela House", isCorrect: true },
+      { answerText: "Millionaire's Rise", isCorrect: false },
+      { answerText: "The Tower Block", isCorrect: false }
     ]
   },
   {
-    text: "What was the name of Boycie's flirtatious wife?",
+    questionText: "What was the name of Boycie's flirtatious wife?",
     answers: [
-      { text: "Carly", isCorrect: false },
-      { text: "Marlene", isCorrect: true },
-      { text: "Linda", isCorrect: false }
+      { answerText: "Carly", isCorrect: false },
+      { answerText: "Marlene", isCorrect: true },
+      { answerText: "Linda", isCorrect: false }
     ]
   },
   {
-    text: "What is Del and Raquel's son called?",
+    questionText: "What is Del and Raquel's son called?",
     answers: [
-      { text: "David", isCorrect: false },
-      { text: "Damien", isCorrect: true },
-      { text: "Darren", isCorrect: false }
+      { answerText: "David", isCorrect: false },
+      { answerText: "Damien", isCorrect: true },
+      { answerText: "Darren", isCorrect: false }
     ]
   },
   {
-    text: "What is Duke?",
+    questionText: "What is Duke?",
     answers: [
-      { text: "A race horse", isCorrect: false },
-      { text: "A Great Dane", isCorrect: true },
-      { text: "Labrador", isCorrect: false }
+      { answerText: "A race horse", isCorrect: false },
+      { answerText: "A Great Dane", isCorrect: true },
+      { answerText: "Labrador", isCorrect: false }
     ]
   },
   {
-    text: "Where do most of Uncle Albert's anecdotes focus on?",
+    questionText: "Where do most of Uncle Albert's anecdotes focus on?",
     answers: [
-      { text: "When i was a lad", isCorrect: false },
-      { text: "During the war", isCorrect: true },
-      { text: "The good old days", isCorrect: false }
+      { answerText: "When i was a lad", isCorrect: false },
+      { answerText: "During the war", isCorrect: true },
+      { answerText: "The good old days", isCorrect: false }
     ]
   },
   {
-    text: "In which episode do the Trotters finally become millionaires?",
+    questionText:
+      "In which episode do the Trotters finally become millionaires?",
     answers: [
-      { text: "We're in the money", isCorrect: false },
-      { text: "Time on our hands", isCorrect: true },
-      { text: "The Unlucky Winner Is", isCorrect: false }
+      { answerText: "We're in the money", isCorrect: false },
+      { answerText: "Time on our hands", isCorrect: true },
+      { answerText: "The Unlucky Winner Is", isCorrect: false }
     ]
   },
   {
-    text: "What GCSE's does Rodney have?",
+    questionText: "What GCSE's does Rodney have?",
     answers: [
-      { text: "English and Art", isCorrect: false },
-      { text: "Maths and Art", isCorrect: true },
-      { text: "English and Chemistry", isCorrect: false }
+      { answerText: "English and Art", isCorrect: false },
+      { answerText: "Maths and Art", isCorrect: true },
+      { answerText: "English and Chemistry", isCorrect: false }
     ]
   },
   {
-    text: "What item made Derek an overnight millionaire?",
+    questionText: "What item made Derek an overnight millionaire?",
     answers: [
-      { text: "A stamp", isCorrect: false },
-      { text: "A coin", isCorrect: false },
-      { text: "A watch", isCorrect: true }
+      { answerText: "A stamp", isCorrect: false },
+      { answerText: "A coin", isCorrect: false },
+      { answerText: "A watch", isCorrect: true }
     ]
   },
   {
-    text: "What was Raquel doing when Del Boy first saw her at the pub?",
+    questionText:
+      "What was Raquel doing when Del Boy first saw her at the pub?",
     answers: [
-      { text: "stripping", isCorrect: true },
-      { text: "Getting arrested", isCorrect: false },
-      { text: "Getting drunk", isCorrect: false }
+      { answerText: "stripping", isCorrect: true },
+      { answerText: "Getting arrested", isCorrect: false },
+      { answerText: "Getting drunk", isCorrect: false }
     ]
   },
   {
-    text: "What is Boycie's hobby?",
+    questionText: "What is Boycie's hobby?",
     answers: [
-      { text: "Breeding cats", isCorrect: false },
-      { text: "Breeding tropical fish", isCorrect: true },
-      { text: "Breeding mice", isCorrect: false }
+      { answerText: "Breeding cats", isCorrect: false },
+      { answerText: "Breeding tropical fish", isCorrect: true },
+      { answerText: "Breeding mice", isCorrect: false }
     ]
   },
   {
-    text: "Finish the line: 'No income tax, no VAT, no money back...'",
+    questionText: "Finish the line: 'No income tax, no VAT, no money back...'",
     answers: [
-      { text: "No time to waste", isCorrect: false },
-      { text: "No time for me", isCorrect: false },
-      { text: "No guarantee", isCorrect: true }
+      { answerText: "No time to waste", isCorrect: false },
+      { answerText: "No time for me", isCorrect: false },
+      { answerText: "No guarantee", isCorrect: true }
     ]
   },
   {
-    text:
+    questionText:
       "What is the name of the episode in which Del And Rodney go to Miami?",
     answers: [
-      { text: "Miami twice", isCorrect: true },
-      { text: "Miami once", isCorrect: false },
-      { text: "Once too much", isCorrect: false }
+      { answerText: "Miami twice", isCorrect: true },
+      { answerText: "Miami once", isCorrect: false },
+      { answerText: "Once too much", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "In the last episode 'Sleepless In Peckham' what was the name of the singer from Newcastle?",
     answers: [
-      { text: "Ziggy the beast", isCorrect: false },
-      { text: "Ziggy saw dust", isCorrect: true },
-      { text: "Ziggy two-time", isCorrect: false }
+      { answerText: "Ziggy the beast", isCorrect: false },
+      { answerText: "Ziggy saw dust", isCorrect: true },
+      { answerText: "Ziggy two-time", isCorrect: false }
     ]
   },
   {
-    text: "In the first episode how many brief cases does Del buy of Trigger?",
+    questionText:
+      "In the first episode how many brief cases does Del buy of Trigger?",
     answers: [
-      { text: "130", isCorrect: false },
-      { text: "25", isCorrect: true },
-      { text: "30", isCorrect: false }
+      { answerText: "130", isCorrect: false },
+      { answerText: "25", isCorrect: true },
+      { answerText: "30", isCorrect: false }
     ]
   },
   {
-    text:
+    questionText:
       "In the episode diamonds are for Heather what is the name of Heathers son?",
     answers: [
-      { text: "Dave", isCorrect: false },
-      { text: "Darren", isCorrect: false },
-      { text: "Dan", isCorrect: true }
+      { answerText: "Dave", isCorrect: false },
+      { answerText: "Darren", isCorrect: false },
+      { answerText: "Dan", isCorrect: true }
     ]
   },
   {
-    text: "why did Del never marry any of the women he got engaged to?",
+    questionText: "why did Del never marry any of the women he got engaged to?",
     answers: [
-      { text: "Because he didn't want to marry", isCorrect: false },
-      { text: "Because they were all married", isCorrect: false },
+      { answerText: "Because he didn't want to marry", isCorrect: false },
+      { answerText: "Because they were all married", isCorrect: false },
       {
-        text: "Because none of his fiancees wanted to bring up Rodney",
+        answerText: "Because none of his fiancees wanted to bring up Rodney",
         isCorrect: true
       }
     ]
   },
   {
-    text: "How much did the Harrison 'lesser watch' sell for at auction?",
+    questionText:
+      "How much did the Harrison 'lesser watch' sell for at auction?",
     answers: [
-      { text: "£16,200,000", isCorrect: false },
-      { text: "£6,200,000", isCorrect: true },
-      { text: "£5,200,000", isCorrect: false }
+      { answerText: "£16,200,000", isCorrect: false },
+      { answerText: "£6,200,000", isCorrect: true },
+      { answerText: "£5,200,000", isCorrect: false }
     ]
   },
   {
-    text: "What was Rodneys son called?",
+    questionText: "What was Rodneys son called?",
     answers: [
-      { text: "Damien", isCorrect: false },
-      { text: "Rodney didn't have a son", isCorrect: true },
-      { text: "James", isCorrect: false }
+      { answerText: "Damien", isCorrect: false },
+      { answerText: "Rodney didn't have a son", isCorrect: true },
+      { answerText: "James", isCorrect: false }
     ]
   },
   {
-    text: "Which 1980s car did Del Boy cherish?",
+    questionText: "Which 1980s car did Del Boy cherish?",
     answers: [
-      { text: "Ford Capri", isCorrect: true },
-      { text: "Ford Tippex", isCorrect: false },
-      { text: "Aston martin", isCorrect: false }
+      { answerText: "Ford Capri", isCorrect: true },
+      { answerText: "Ford Tippex", isCorrect: false },
+      { answerText: "Aston martin", isCorrect: false }
     ]
   },
   {
-    text: "What is the 1st line of the theme tune?",
+    questionText: "What is the 1st line of the theme tune?",
     answers: [
-      { text: "No income tax", isCorrect: false },
+      { answerText: "No income tax", isCorrect: false },
       {
-        text: "Why do only fools and horses workBraided small tit",
+        answerText: "Why do only fools and horses workBraided small tit",
         isCorrect: false
       },
-      { text: "Stick a pony in me pocket", isCorrect: true }
+      { answerText: "Stick a pony in me pocket", isCorrect: true }
     ]
   },
   {
-    text: "What did the Trotters break in the episode 'A Touch of Glass'?",
+    questionText:
+      "What did the Trotters break in the episode 'A Touch of Glass'?",
     answers: [
-      { text: "The gold watch", isCorrect: false },
-      { text: "The Nag's head sign", isCorrect: false },
-      { text: "A chandelier", isCorrect: true }
+      { answerText: "The gold watch", isCorrect: false },
+      { answerText: "The Nag's head sign", isCorrect: false },
+      { answerText: "A chandelier", isCorrect: true }
     ]
   },
   {
-    text: "What is Boycie's first name?",
+    questionText: "What is Boycie's first name?",
     answers: [
-      { text: "Betram", isCorrect: false },
-      { text: "Aubrey", isCorrect: true },
-      { text: "Audery", isCorrect: false }
+      { answerText: "Betram", isCorrect: false },
+      { answerText: "Aubrey", isCorrect: true },
+      { answerText: "Audery", isCorrect: false }
     ]
   },
   {
-    text: "Who invites Delboy to be his business partner in Australia?",
+    questionText: "Who invites Delboy to be his business partner in Australia?",
     answers: [
-      { text: "Jumbo Jones", isCorrect: false },
-      { text: "Jumbo Mills", isCorrect: true },
-      { text: "Jumbo Smith", isCorrect: false }
+      { answerText: "Jumbo Jones", isCorrect: false },
+      { answerText: "Jumbo Mills", isCorrect: true },
+      { answerText: "Jumbo Smith", isCorrect: false }
     ]
   },
   {
-    text: "What is the name of Boycie's and Marlene's dog?",
+    questionText: "What is the name of Boycie's and Marlene's dog?",
     answers: [
-      { text: "Duke", isCorrect: true },
-      { text: "Boycie Junior", isCorrect: false },
-      { text: "Duchess", isCorrect: false }
+      { answerText: "Duke", isCorrect: true },
+      { answerText: "Boycie Junior", isCorrect: false },
+      { answerText: "Duchess", isCorrect: false }
     ]
   },
   {
-    text: "What is Delboy and Rodney's Mum's name?",
+    questionText: "What is Delboy and Rodney's Mum's name?",
     answers: [
-      { text: "Joyce", isCorrect: false },
-      { text: "Jane", isCorrect: false },
-      { text: "Joan", isCorrect: true }
+      { answerText: "Joyce", isCorrect: false },
+      { answerText: "Jane", isCorrect: false },
+      { answerText: "Joan", isCorrect: true }
     ]
   },
   {
-    text:
+    questionText:
       "How many new handles and heads did Trigger's old broom (that he's been looking after for 20 years) have?",
     answers: [
-      { text: "17 new heads and 14 new handles", isCorrect: true },
-      { text: "11 new heads and 16 new handles", isCorrect: false },
-      { text: "22 new heads and 144 new handles", isCorrect: false }
+      { answerText: "17 new heads and 14 new handles", isCorrect: true },
+      { answerText: "11 new heads and 16 new handles", isCorrect: false },
+      { answerText: "22 new heads and 144 new handles", isCorrect: false }
     ]
   },
   {
-    text: "Finish the line: 'This time next year we'll be...'",
+    questionText: "Finish the line: 'This time next year we'll be...'",
     answers: [
-      { text: "Cushty", isCorrect: false },
-      { text: "Millionaires", isCorrect: true },
-      { text: "Made", isCorrect: false }
+      { answerText: "Cushty", isCorrect: false },
+      { answerText: "Millionaires", isCorrect: true },
+      { answerText: "Made", isCorrect: false }
     ]
   },
   {
-    text: "How does Denzil know Del?",
+    questionText: "How does Denzil know Del?",
     answers: [
-      { text: "Met at work", isCorrect: false },
-      { text: "From the pub", isCorrect: false },
-      { text: "Went to school together", isCorrect: true }
+      { answerText: "Met at work", isCorrect: false },
+      { answerText: "From the pub", isCorrect: false },
+      { answerText: "Went to school together", isCorrect: true }
     ]
   }
 ];

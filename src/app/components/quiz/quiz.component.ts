@@ -1,12 +1,12 @@
 import { Component, OnInit } from "@angular/core";
 import { questions } from "./quiz.data";
 
-interface Question {
-  text: string;
+export interface Question {
+  questionText: string;
   answers: Answer[];
 }
 interface Answer {
-  text: string;
+  answerText: string;
   isCorrect: boolean;
 }
 
@@ -18,6 +18,7 @@ interface Answer {
 export class QuizComponent implements OnInit {
   questions: Question[] = questions;
   currentQuestionIndex: number;
+  selectedAnswer: Answer | null;
 
   constructor() {}
 
@@ -27,7 +28,7 @@ export class QuizComponent implements OnInit {
     );
   }
 
-  showAnswer() {
-    alert("Hit");
+  selectAnswer(answer: Answer) {
+    this.selectedAnswer = answer;
   }
 }

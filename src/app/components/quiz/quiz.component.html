@@ -13,17 +13,29 @@
       >
         <thead>
           <tr>
-            <th>{{ currentQuestionIndex }}</th>
+            <th>{{ questions[currentQuestionIndex].questionText }}</th>
           </tr>
         </thead>
-        <tbody *ngFor="let answer of currentAnswers">
+        <tbody *ngFor="let answer of questions[currentQuestionIndex].answers">
           <tr>
             <td
-              (click)="showAnswer()"
-              *ngIf="correctAnswer; else wrongAnswer"
-              [ngClass]="{ 'bg-success': answer.corr }"
+              (click)="selectAnswer(answer)"
+              [ngClass]="{
+                'bg-success': answer.isCorrect && selectedAnswer,
+                'bg-danger':
+                  !answer.isCorrect &&
+                  selectedAnswer &&
+                  selectedAnswer === answer
+              }"
             >
-              {{ answer }}
+              {{ answer.answerText }}
+            </td>
+          </tr>
+        </tbody>
+        <tbody *ngIf="selectedAnswer">
+          <tr>
+            <td>
+              Next
             </td>
           </tr>
         </tbody>
