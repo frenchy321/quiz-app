@@ -17,7 +17,7 @@ interface Answer {
 })
 export class QuizComponent implements OnInit {
   questions: Question[] = questions;
-  currentQuestionIndex: number;
+  currentQuestionIndex: number | null;
   selectedAnswer: Answer | null;
 
   constructor() {}
@@ -30,5 +30,12 @@ export class QuizComponent implements OnInit {
 
   selectAnswer(answer: Answer) {
     this.selectedAnswer = answer;
+  }
+
+  nextQuestion(selectedAnswer) {
+    this.currentQuestionIndex = Math.floor(
+      Math.random() * this.questions.length
+    );
+    return selectedAnswer === false;
   }
 }
