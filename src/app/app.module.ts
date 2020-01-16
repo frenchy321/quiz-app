@@ -15,7 +15,9 @@ import { appRoutes } from "./app-routing.module";
 import { ComponentsComponent } from "./components/components.component";
 import { AddUserComponent } from "./components/add-user/add-user.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
-import { ScoresComponent } from './components/scores/scores.component';
+import { ScoresComponent } from "./components/scores/scores.component";
+import { AuthGuard } from "./auth/auth.guard";
+import { UserService } from "./services/user.service";
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { ScoresComponent } from './components/scores/scores.component';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [UserService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
