@@ -18,24 +18,26 @@ interface Answer {
 export class QuizComponent implements OnInit {
   questions: Question[] = questions;
   currentQuestionIndex: number | null;
-  selectedAnswer: Answer | null;
+  selectedAnswer: Answer | null = null;
+  selectedAnswers: Answer[] = [];
 
   constructor() {}
 
   ngOnInit() {
-    this.currentQuestionIndex = Math.floor(
-      Math.random() * this.questions.length
-    );
+    this.nextQuestion();
   }
 
   selectAnswer(answer: Answer) {
-    this.selectedAnswer = answer;
+    if (this.selectedAnswer === null) {
+      this.selectedAnswer = answer;
+      this.selectedAnswers[this.currentQuestionIndex] = answer;
+    }
   }
 
-  nextQuestion(selectedAnswer) {
+  nextQuestion() {
     this.currentQuestionIndex = Math.floor(
       Math.random() * this.questions.length
     );
-    return selectedAnswer === false;
+    this.selectedAnswer = null;
   }
 }
