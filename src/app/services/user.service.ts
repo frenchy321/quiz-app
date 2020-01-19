@@ -15,7 +15,7 @@ export class UserService {
   usersCollection: AngularFirestoreCollection<User>;
   usersDoc: AngularFirestoreDocument<User>;
   users: Observable<User[]>;
-  user: Observable<User>;
+  currentUser: User;
 
   constructor(private afs: AngularFirestore) {
     this.usersCollection = this.afs.collection("users", ref =>
@@ -38,6 +38,11 @@ export class UserService {
   }
 
   newUser(user: User) {
-    this.usersCollection.add(user);
+    this.currentUser = user;
+  }
+
+  submitScore(score: number) {
+    this.currentUser.score = score;
+    this.usersCollection.add(this.currentUser);
   }
 }
