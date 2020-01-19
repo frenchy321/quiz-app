@@ -13,6 +13,8 @@ export class ScoresComponent implements OnInit {
   constructor(private usersService: UserService) {}
 
   ngOnInit() {
-    this.usersService.getUsers().subscribe(users => (this.users = users));
+    this.usersService
+      .getUsers()
+      .subscribe(users => (this.users = users.reverse()));
   }
 }
